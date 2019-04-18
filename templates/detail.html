@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <table border="1" cellspacing="5" cellpadding="5">
+            {% for row in detail_info %}
+                <tr>
+                    <td>{{ row.id }}</td>
+                    <td>{{ row.ip }}</td>
+                    <td>{{ row.login_port }}</td>
+                    <td>{{ row.server }}</td>
+                    <td>{{ row.login_user }}</td>
+                    <td>{{ row.listen_port }}</td>
+                    <td>{{ row.login_pwd }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
